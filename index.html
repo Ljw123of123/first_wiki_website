@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>我的个人Wiki主页</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <nav class="container-fluid">
+      <ul>
+        <li><strong>张伟的Wiki</strong></li>
+      </ul>
+      <ul>
+        <li><a href="#about">关于我</a></li>
+        <li><a href="#records">记录</a></li>
+        <li><a href="#comments">评论</a></li>
+        <li><a href="#visits" id="visit-btn" role="button">访客记录</a></li>
+      </ul>
+    </nav>
+
+    <main class="container layout">
+      <!-- 左侧个人信息 -->
+      <aside class="left-panel">
+        <section id="about">
+          <h2>张伟</h2>
+          <h3>生活记录者 · 设计美学爱好者</h3>
+          <p>你好！欢迎来到我的个人主页。我记录生活、思考与艺术。</p>
+          <img src="https://source.unsplash.com/400x300/?portrait,art" alt="我的头像" class="art-image">
+          <h4>背景</h4>
+          <p>北京 UI/UX 设计师，关注情绪、审美与创作。</p>
+          <h4>兴趣爱好</h4>
+          <ul>
+            <li>旅行</li>
+            <li>写作</li>
+            <li>摄影</li>
+            <li>绘画</li>
+          </ul>
+        </section>
+      </aside>
+
+      <!-- 右侧内容 -->
+      <section class="right-panel" id="records">
+        <h2>生活记录 & 随笔</h2>
+
+        <article class="record">
+          <h3>【记录】午后阳光</h3>
+          <img src="https://source.unsplash.com/600x400/?sunlight,book" alt="阳光书本" class="art-image">
+          <p>今日在老书店中感受时光的温柔，阳光刚好洒在旧书上。</p>
+          <button onclick="alert('感谢点赞！')">点赞</button>
+          <form>
+            <input type="text" placeholder="发表评论..." />
+            <button onclick="event.preventDefault(); alert('评论已提交！')">评论</button>
+          </form>
+        </article>
+
+        <article class="record">
+          <h3>【随笔】夜行者</h3>
+          <img src="https://source.unsplash.com/600x400/?night,city" alt="夜晚城市" class="art-image">
+          <p>夜晚的街灯是灵魂的回声。我喜欢这样静默地走在黑夜中。</p>
+          <button onclick="alert('感谢点赞！')">点赞</button>
+          <form>
+            <input type="text" placeholder="发表评论..." />
+            <button onclick="event.preventDefault(); alert('评论已提交！')">评论</button>
+          </form>
+        </article>
+      </section>
+    </main>
+
+    <!-- 评论 -->
+    <section id="comments" class="container">
+      <h3>留言板</h3>
+      <form>
+        <textarea rows="4" placeholder="对我的主页说点什么吧..."></textarea>
+        <button onclick="event.preventDefault(); alert('感谢留言！')">提交</button>
+      </form>
+    </section>
+
+    <!-- 访客信息区域 -->
+    <section id="visits" class="container hidden">
+      <h3>访客记录（仅站长可见）</h3>
+      <p>IP: 192.168.1.100 - 时间：2025-06-13 14:21</p>
+      <p>IP: 192.168.1.101 - 时间：2025-06-13 15:10</p>
+    </section>
+
+    <footer class="container">
+      <small><a href=\"#\">返回顶部</a> • <a href=\"#\">版权所有 © 2025 张伟</a></small>
+    </footer>
+  </body>
+</html>
