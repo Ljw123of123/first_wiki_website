@@ -1,0 +1,33 @@
+.layout {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding-top: 2rem;
+}
+
+.left-panel {
+  width: 30%;
+  border-right: 1px solid #ddd;
+  padding-right: 1rem;
+}
+
+.right-panel {
+  width: 70%;
+  padding-left: 1rem;
+}
+
+.art-image {
+  border-radius: 12px;
+  margin: 1rem 0;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
+
+.record {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.hidden {
+  display: none;
+}
